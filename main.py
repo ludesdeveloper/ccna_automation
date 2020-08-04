@@ -1,10 +1,8 @@
 import os
 import sqlite3
 from flask import Flask, render_template, request, redirect, jsonify
-from flask_cors import CORS
 #configuration
 app = Flask(__name__)
-CORS(app)
 THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
 my_db = os.path.join(THIS_FOLDER, 'automation.db')
 #additional function
