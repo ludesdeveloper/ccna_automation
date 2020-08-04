@@ -108,7 +108,7 @@ def delete_crud(id):
 def api_instruction():
     return render_template('api_instruction.html')
 
-@app.route('/api', methods=['GET'])
+@app.route('/api', methods=['GET','POST'])
 def api():
     query_parameters = request.args
 
