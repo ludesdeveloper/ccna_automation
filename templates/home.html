@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    .ball {
+
+    margin-left: -2000px;
+
+    transition: 1s;
+
+    }
+</style>
+<div class="ball d-flex justify-content-center" id="selamat_datang">
+    <h3>Selamat Datang di Sharing CCNA Automation</h3>
+</div>
+<script>
+    window.onload = function() {
+        var ball = document.getElementById('selamat_datang')
+        ball.style.marginLeft = "25px";
+    };
+</script>
+{% endblock %}

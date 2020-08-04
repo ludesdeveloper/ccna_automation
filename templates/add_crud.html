@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}     
+    <form action="{{ url_for('add_crud') }}" method="POST">
+        <div class="form-group">
+            <label for="katakata">Kata Kata</label>
+            <input type="text" class="form-control" id="katakata" name="katakata" placeholder="Tambahkan Kata Kata yang Anda mau">
+        </div>
+        <button type="submit" class="btn btn-primary">Tambah</button>
+    </form>
+{% endblock %}

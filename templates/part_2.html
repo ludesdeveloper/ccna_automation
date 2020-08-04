@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row d-flex justify-content-center mt-3">
+    <h3>Traditional Networks VS Controller-Based Networking</h3>
+</div>
+<div class="row d-flex justify-content-center mt-3">
+    <div>
+        <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Traditional Networks</th>
+                <th scope="col">Controller-Based Networking</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                    Statis. Butuh effort untuk melakukan perubahan,<br>
+                    apalagi yang skalanya massal
+                </td>
+                <td>
+                    Dinamis. Mudah untuk melakukan perubahan, skala kecil<br>
+                    ataupun skala besar
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    Fokus pada Hardware
+                </td>
+                <td>
+                    Fokus pada Software
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    Control Plane ada di dalam hardware
+                </td>
+                <td>
+                    Control Plane terpisah, dan tersentralisasi
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    Menggunakan protocol
+                </td>
+                <td>
+                    Menggunakan protocol/API
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>
+
+{% endblock %}
