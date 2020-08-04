@@ -125,7 +125,7 @@ def api():
 
     query = query[:-4] + ';'
 
-    conn = sqlite3.connect('automation.db')
+    conn = sqlite3.connect(my_db)
     conn.row_factory = dict_factory
     cur = conn.cursor()
 
