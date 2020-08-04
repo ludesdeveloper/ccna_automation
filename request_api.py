@@ -1,6 +1,6 @@
 import requests
 
-resp = requests.get('http://seskiramadhan.pythonanywhere.com/api?id=8')
+resp = requests.get('http://seskiramadhan.pythonanywhere.com/api?id=9')
 data = resp.json()
 data = data[0]
 data = data["katakata"]
