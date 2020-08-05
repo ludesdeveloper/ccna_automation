@@ -40,6 +40,14 @@ def part_5():
 def part_6():
     return render_template('part_6.html')
 
+@app.route('/part_7')
+def part_7():
+    return render_template('part_7.html')
+
+@app.route('/part_8')
+def part_8():
+    return render_template('part_8.html')
+
 @app.route('/view_crud')
 def view_crud():
     #create view db
